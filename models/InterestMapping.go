@@ -1,6 +1,6 @@
 package models
 
-type InteresetMapping struct {
+type InterestMapping struct {
 	UserID     int
 	InterestID int
 }

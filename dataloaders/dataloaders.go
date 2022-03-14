@@ -19,9 +19,9 @@ func LoadInterests() []Interest {
 	json.Unmarshal([]byte(bytes), &data)
 	return data
 }
-func LoadInterestMappings() []InteresetMapping {
+func LoadInterestMappings() []InterestMapping {
 	bytes, _ := util.ReadFile("../json/userInterestMappings.json")
-	var data []InteresetMapping
+	var data []InterestMapping
 	json.Unmarshal([]byte(bytes), &data)
 	return data
 }

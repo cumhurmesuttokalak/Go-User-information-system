@@ -22,10 +22,10 @@ func Handler(wr http.ResponseWriter, r *http.Request) {
 	//işlem
 	var newUsers []User
 	for _, user := range users {
-		for _, interestsMapping := range interestsMappings {
-			if user.ID == interestsMapping.UserID {
+		for _, interestMapping := range interestsMappings {
+			if user.ID == interestMapping.UserID {
 				for _, interest := range interests {
-					if interestsMapping.InterestID == interest.ID {
+					if interestMapping.InterestID == interest.ID {
 						user.Interests = append(user.Interests, interest)
 					}
 				}

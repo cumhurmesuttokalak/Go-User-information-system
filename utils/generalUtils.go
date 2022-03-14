@@ -1,9 +1,7 @@
 package utils
 
-import "log"
-
 func checkErr(err error) {
 	if err != nil {
-		log.Fatal(err)
+		err.Error()
 	}
 }
